@@ -5,7 +5,7 @@ name: Repository Updater
 on:
   repository_dispatch:
     types: ["update"]
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   workflows:
