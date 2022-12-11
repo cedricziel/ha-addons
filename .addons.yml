@@ -5,3 +5,7 @@ addons:
     repository: cedricziel/ha-addon-otelcol
     target: otelcol
     image: ghcr.io/cedricziel/{arch}-ha-addon-otelcol
+  mimir:
+    repository: cedricziel/ha-addon-grafana-mimir
+    target: mimir
+    image: ghcr.io/cedricziel/{arch}-addon-grafana-mimir
