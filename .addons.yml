@@ -1,0 +1,7 @@
+---
+channel: edge
+addons:
+  otelcol:
+    repository: cedricziel/ha-addon-opentelemetry
+    target: otelcol
+    image: ghcr.io/cedricziel/{arch}-ha-addon-otelcol
