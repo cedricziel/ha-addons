@@ -13,3 +13,7 @@ addons:
     repository: cedricziel/ha-addon-grafana-mimir
     target: mimir
     image: ghcr.io/cedricziel/{arch}-addon-grafana-mimir
+  tempo:
+    repository: cedricziel/ha-addon-grafana-tempo
+    target: tempo
+    image: ghcr.io/cedricziel/{arch}-addon-grafana-tempo
