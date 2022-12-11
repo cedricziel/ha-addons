@@ -1,5 +1,5 @@
 ---
-channel: edge
+channel: stable
 addons:
   otelcol:
     repository: cedricziel/ha-addon-otelcol
