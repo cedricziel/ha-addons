@@ -1,3 +1,5 @@
 ## What’s changed
 
-- Remove translations @cedricziel (#50)
+## 🧰 Maintenance
+
+- Set slug @cedricziel (#51)
