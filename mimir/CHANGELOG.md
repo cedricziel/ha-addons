@@ -1,3 +1,3 @@
 ## What’s changed
 
-- Remove annotations @cedricziel (#49)
+- Remove translations @cedricziel (#50)
