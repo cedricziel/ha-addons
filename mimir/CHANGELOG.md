@@ -1,3 +1,3 @@
 ## What’s changed
 
-* No changes
+- Remove annotations @cedricziel (#49)
