@@ -4,15 +4,43 @@
     "packages": {
         "loki": {
             "release-type": "simple"
+            "extra-files": [
+                {
+                    "type": "yaml",
+                    "path": "config.yaml",
+                    "jsonpath": "$.version"
+                }
+            ]
         },
         "mimir": {
-            "release-type": "simple"
+            "release-type": "simple",
+            "extra-files": [
+                {
+                    "type": "yaml",
+                    "path": "config.yaml",
+                    "jsonpath": "$.version"
+                }
+            ]
         },
         "otelcol": {
-            "release-type": "simple"
+            "release-type": "simple",
+            "extra-files": [
+                {
+                    "type": "yaml",
+                    "path": "config.yaml",
+                    "jsonpath": "$.version"
+                }
+            ]
         },
         "tempo": {
-            "release-type": "simple"
+            "release-type": "simple",
+            "extra-files": [
+                {
+                    "type": "yaml",
+                    "path": "config.yaml",
+                    "jsonpath": "$.version"
+                }
+            ]
         }
     }
 }
