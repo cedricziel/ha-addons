@@ -1,3 +1,5 @@
 ## What’s changed
 
-* No changes
+## 🚀 Enhancements
+
+- chore: migrate to homeassistant_config @cedricziel (#72)

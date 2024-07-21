@@ -1,5 +1,5 @@
 name: OpenTelemetry Collector
-version: 0.10.5
+version: 0.10.7
 slug: otelcol
 description: Bring the OpenTelemetry collector into your home
 url: https://github.com/cedricziel/ha-addon-otelcol
@@ -14,8 +14,8 @@ arch:
 - amd64
 init: false
 map:
+- homeassistant_config:rw
 - share:rw
-- config:rw
 apparmor: false
 options:
   config: "receivers:\n  otlp:\n    protocols:\n      grpc:\n      http:\nprocessors:\n\
