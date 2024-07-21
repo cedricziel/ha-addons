@@ -5,6 +5,8 @@ ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:3.15
 FROM --platform=linux/amd64 grafana/loki:2.9.9 as loki-amd64
 # hadolint ignore=DL3029
 FROM --platform=linux/arm64 grafana/loki:2.9.9 as loki-arm64
+# hadolint ignore=DL3029
+FROM --platform=linux/arm grafana/loki:2.9.9 as loki-armv7
 
 FROM ghcr.io/tarampampam/curl:8.8.0 as curl
 
@@ -12,6 +14,7 @@ FROM scratch as container
 
 COPY --from=loki-amd64 /usr/bin/loki /amd64/
 COPY --from=loki-arm64 /usr/bin/loki /aarch64/
+COPY --from=loki-armv7 /usr/bin/loki /armv7/
 
 # hadolint ignore=DL3006
 FROM $BUILD_FROM
