@@ -38,7 +38,7 @@ jobs:
     name: Build ${{ matrix.arch }} ${{ matrix.addon }} add-on
     strategy:
       matrix:
-        addon: ${{ needs.release-please.outputs.paths_released }}
+        addon: ${{ fromJSON(needs.release-please.outputs.paths_released) }}
         arch:
           - "aarch64"
           - "amd64"
