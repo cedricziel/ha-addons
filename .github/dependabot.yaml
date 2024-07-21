@@ -5,4 +5,11 @@ updates:
     directory: "/"
     schedule:
       interval: daily
-      time: "06:00"
+    assignees:
+      - cedricziel
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - cedricziel
