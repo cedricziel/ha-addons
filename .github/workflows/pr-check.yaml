@@ -20,13 +20,16 @@ jobs:
         uses: dorny/paths-filter@v3
         id: filter
         with:
-          filter: .github/path-filters.yaml
+          filters: .github/path-filters.yaml
 
       - name: 📂 Detect chanced files
         uses: dorny/paths-filter@v3
         id: changed-files
         with:
           list-files: csv
+          filters: |
+            changelogs:
+              - '**/CHANGELOG.md'
 
   addon-linter:
     name: Addon linting
