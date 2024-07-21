@@ -4,7 +4,7 @@ FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-colle
 
 FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.105.0-arm64 as otelcol-arm64
 
-FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.105.0-i386 as otelcol-i386
+FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.105.0-386 as otelcol-i386
 
 FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.105.0-armv7 as otelcol-armv7
 
@@ -15,6 +15,7 @@ FROM scratch as container
 COPY --from=otelcol-amd64 /otelcol-contrib /amd64/
 COPY --from=otelcol-arm64 /otelcol-contrib /aarch64/
 COPY --from=otelcol-i386 /otelcol-contrib /i386/
+COPY --from=otelcol-armv7 /otelcol-contrib /armv7/
 
 # hadolint ignore=DL3006
 FROM $BUILD_FROM
@@ -53,7 +54,7 @@ LABEL \
     org.opencontainers.image.licenses="Apache2 License" \
     org.opencontainers.image.url="https://github.com/cedricziel/ha-addons" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
-    org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
+    org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/otelcol/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
