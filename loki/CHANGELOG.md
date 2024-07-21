@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.0.7](https://github.com/cedricziel/ha-addons/compare/loki-1.0.6...loki-1.0.7) (2024-07-21)
+
+
+### Bug Fixes
+
+* bump ([#45](https://github.com/cedricziel/ha-addons/issues/45)) ([2983917](https://github.com/cedricziel/ha-addons/commit/2983917c0cd09bcb9df0040eb0089a36b18bb734))
+
 ## [1.0.6](https://github.com/cedricziel/ha-addons/compare/loki-1.0.5...loki-1.0.6) (2024-07-21)
 
 
