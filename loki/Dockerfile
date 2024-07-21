@@ -1,0 +1,30 @@
+ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:3.15
+
+# Loki
+# hadolint ignore=DL3029
+FROM --platform=linux/amd64 grafana/loki:2.9.9 as loki-amd64
+# hadolint ignore=DL3029
+FROM --platform=linux/arm64 grafana/loki:2.9.9 as loki-arm64
+
+FROM ghcr.io/tarampampam/curl:8.8.0 as curl
+
+FROM scratch as container
+
+COPY --from=loki-amd64 /usr/bin/loki /amd64/
+COPY --from=loki-arm64 /usr/bin/loki /aarch64/
+
+# hadolint ignore=DL3006
+FROM $BUILD_FROM
+
+# Setup base system
+ARG BUILD_ARCH=amd64
+
+COPY --from=container /${BUILD_ARCH}/loki /usr/bin/loki
+
+COPY --from=curl /bin/curl /bin/curl
+
+# Copy root filesystem
+COPY rootfs /
+
+HEALTHCHECK --interval=5m --timeout=3s \
+  CMD curl -f http://localhost:3100/ready || exit 1
