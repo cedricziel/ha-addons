@@ -2,6 +2,8 @@
 
 Grafana Tempo is an open source, easy-to-use, and high-scale distributed tracing backend.
 
+This addons works well with the OpenTelemetry collector addon from this repository.
+
 ## How to use
 
 To send data to Tempo, you can use OTLP, Jaeger and Zipkin.

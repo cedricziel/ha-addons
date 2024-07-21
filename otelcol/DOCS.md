@@ -5,3 +5,5 @@ This AddOn brings the [OpenTelemetry collector](https://github.com/open-telemetr
 ## How to use
 
 By default, it will do nothing except trying to scrape its own metrics.
+
+You can change the configuration to handle other data-streams.
