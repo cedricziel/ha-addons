@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.0.15](https://github.com/cedricziel/ha-addons/compare/mimir-1.0.14...mimir-1.0.15) (2024-07-21)
+
+
+### Bug Fixes
+
+* remove architectures ([#74](https://github.com/cedricziel/ha-addons/issues/74)) ([5d20acb](https://github.com/cedricziel/ha-addons/commit/5d20acb99602cf871948617d1af1f0961e5a0a90))
+
 ## [1.0.14](https://github.com/cedricziel/ha-addons/compare/mimir-1.0.13...mimir-1.0.14) (2024-07-21)
 
 
