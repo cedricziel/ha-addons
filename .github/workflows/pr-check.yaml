@@ -27,6 +27,9 @@ jobs:
         id: changed-files
         with:
           list-files: csv
+          filters: |
+            changelogs:
+              - '**/CHANGELOG.md'
 
   addon-linter:
     name: Addon linting
