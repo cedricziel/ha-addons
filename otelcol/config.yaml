@@ -1,5 +1,5 @@
 name: OpenTelemetry Collector
-version: 0.10.7
+version: 0.10.8
 slug: otelcol
 description: Bring the OpenTelemetry collector into your home
 url: https://github.com/cedricziel/ha-addon-otelcol
@@ -10,21 +10,43 @@ ports_description:
   4317/tcp: OTLP/gRPC
   4318/tcp: OTLP/HTTP
 arch:
-- aarch64
-- amd64
+  - aarch64
+  - amd64
 init: false
 map:
-- homeassistant_config:rw
-- share:rw
+  - homeassistant_config:rw
+  - share:rw
 apparmor: false
 options:
-  config: "receivers:\n  otlp:\n    protocols:\n      grpc:\n      http:\nprocessors:\n\
-    \  batch:\nexporters:\n  logging:\n# health-check is activated by default\nextensions:\n\
-    \  pprof:\n  zpages:\nservice:\n  extensions: [health_check,pprof,zpages]\n  pipelines:\n\
-    \    traces:\n      receivers: [otlp]\n      processors: [batch]\n      exporters:\
-    \ [logging]\n    metrics:\n      receivers: [otlp]\n      processors: [batch]\n\
-    \      exporters: [logging]\n    logs:\n      receivers: [otlp]\n      processors:\
-    \ [batch]\n      exporters: [logging]\n"
+  config: |
+    receivers:
+      otlp:
+        protocols:
+          grpc:
+          http:
+    processors:
+      batch:
+    exporters:
+      logging:
+    # health-check is activated by default
+    extensions:
+      pprof:
+      zpages:
+    service:
+      extensions: [health_check,pprof,zpages]
+      pipelines:
+        traces:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [logging]
+        metrics:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [logging]
+        logs:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [logging]
 schema:
   config: str
 image: ghcr.io/cedricziel/ha-addon-otelcol/{arch}
