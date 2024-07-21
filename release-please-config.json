@@ -3,7 +3,7 @@
     "separate-pull-requests": true,
     "packages": {
         "loki": {
-            "release-type": "simple"
+            "release-type": "simple",
             "extra-files": [
                 {
                     "type": "yaml",
