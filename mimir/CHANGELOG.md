@@ -1,15 +1,22 @@
-# Changelog
+<!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
-## [1.0.10](https://github.com/cedricziel/ha-addons/compare/mimir-1.0.9...mimir-1.0.10) (2024-07-21)
-
-
-### Bug Fixes
-
-* clean changelog ([#16](https://github.com/cedricziel/ha-addons/issues/16)) ([1802f05](https://github.com/cedricziel/ha-addons/commit/1802f05857cc6cb8ae7a0b12eaa71d8588c78697))
-
-## [1.0.9](https://github.com/cedricziel/ha-addons/compare/mimir-v1.0.8...mimir-1.0.9) (2024-07-21)
+## [1.0.11](https://github.com/cedricziel/ha-addons/compare/mimir-1.0.10...mimir-1.0.11) (2024-07-21)
 
 
 ### Bug Fixes
 
-* remove old folders ([4e654e6](https://github.com/cedricziel/ha-addons/commit/4e654e60c422c544a64d488fbf0a537ba780dfd1))
+* build image on pr ([#27](https://github.com/cedricziel/ha-addons/issues/27)) ([5a67b06](https://github.com/cedricziel/ha-addons/commit/5a67b069e034ed8c2be8f85ce3320e338618939b))
+
+## 1.2.0
+
+- Add an apparmor profile
+- Update to 3.15 base image with s6 v3
+- Add a sample script to run as service and constrain in aa profile
+
+## 1.1.0
+
+- Updates
+
+## 1.0.0
+
+- Initial release
