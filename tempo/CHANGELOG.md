@@ -2,6 +2,13 @@
 
 - rectify receiver config
 
+## [1.1.0](https://github.com/cedricziel/ha-addons/compare/tempo-1.0.16...tempo-1.1.0) (2024-07-21)
+
+
+### Features
+
+* startup tempo as services ([#85](https://github.com/cedricziel/ha-addons/issues/85)) ([5431d84](https://github.com/cedricziel/ha-addons/commit/5431d84dbab4a050d6430c278240daa7676e77b4))
+
 ## [1.0.16](https://github.com/cedricziel/ha-addons/compare/tempo-1.0.15...tempo-1.0.16) (2024-07-21)
 
 
