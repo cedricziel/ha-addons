@@ -1,14 +1,22 @@
-apparmor: false
+name: OpenTelemetry Collector
+version: 0.10.2
+slug: otelcol
+description: Bring the OpenTelemetry collector into your home
+url: https://github.com/cedricziel/ha-addon-otelcol
+ports:
+  4317/tcp: null
+  4318/tcp: null
+ports_description:
+  4317/tcp: OTLP/gRPC
+  4318/tcp: OTLP/HTTP
 arch:
 - aarch64
 - amd64
-description: Bring the OpenTelemetry collector into your home
-image: ghcr.io/cedricziel/{arch}-ha-addon-otelcol
 init: false
 map:
 - share:rw
 - config:rw
-name: OpenTelemetry Collector
+apparmor: false
 options:
   config: "receivers:\n  otlp:\n    protocols:\n      grpc:\n      http:\nprocessors:\n\
     \  batch:\nexporters:\n  logging:\n# health-check is activated by default\nextensions:\n\
@@ -17,15 +25,6 @@ options:
     \ [logging]\n    metrics:\n      receivers: [otlp]\n      processors: [batch]\n\
     \      exporters: [logging]\n    logs:\n      receivers: [otlp]\n      processors:\
     \ [batch]\n      exporters: [logging]\n"
-ports:
-  4317/tcp: null
-  4318/tcp: null
-ports_description:
-  4317/tcp: OTLP/gRPC
-  4318/tcp: OTLP/HTTP
 schema:
   config: str
-slug: otelcol
-url: https://github.com/cedricziel/ha-addon-otelcol
-version: 0.10.1
-watchdog: http://[HOST]:13133/
+image: ghcr.io/cedricziel/{arch}-ha-addon-otelcol
