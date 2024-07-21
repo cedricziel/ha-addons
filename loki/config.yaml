@@ -3,6 +3,7 @@ version: 1.0.9
 slug: loki
 description: 'Loki: like Prometheus, but for logs.'
 url: https://github.com/cedricziel/ha-addons
+startup: services
 apparmor: false
 ports:
   3100/tcp: null
