@@ -6,6 +6,11 @@ on:
   pull_request:
     branches:
       - main
+
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+
 jobs:
   check-addon-changes:
     runs-on: ubuntu-latest
