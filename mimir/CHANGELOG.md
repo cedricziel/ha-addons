@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.1.0](https://github.com/cedricziel/ha-addons/compare/mimir-1.0.15...mimir-1.1.0) (2024-07-21)
+
+
+### Features
+
+* startup mimir as services ([#84](https://github.com/cedricziel/ha-addons/issues/84)) ([f75f3da](https://github.com/cedricziel/ha-addons/commit/f75f3daaa796c14f423601dddb3e8b31b7df2f54))
+
 ## [1.0.15](https://github.com/cedricziel/ha-addons/compare/mimir-1.0.14...mimir-1.0.15) (2024-07-21)
 
 
