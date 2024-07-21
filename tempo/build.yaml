@@ -1,0 +1,9 @@
+---
+build_from:
+  aarch64: "ghcr.io/home-assistant/aarch64-base:3.15"
+  amd64: "ghcr.io/home-assistant/amd64-base:3.15"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Grafana Tempo"
+  org.opencontainers.image.description: "Grafana Tempo is an open source, easy-to-use, and high-scale distributed tracing backend."
+  org.opencontainers.image.source: "https://github.com/cedricziel/ha-addons-grafana-tempo"
+  org.opencontainers.image.licenses: "Apache License 2.0"

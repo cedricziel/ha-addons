@@ -1,0 +1,14 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start the example service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+
+declare prometheus_url
+
+prometheus_url=$(bashio::config 'prometheus_url')
+
+export PROMETHEUS_URL="$prometheus_url"
+
+## Run your program
+exec /tempo -config.file=/etc/tempo/local-config.yaml
