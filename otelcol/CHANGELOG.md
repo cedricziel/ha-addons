@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [0.10.13](https://github.com/cedricziel/ha-addons/compare/otelcol-0.10.12...otelcol-0.10.13) (2024-07-21)
+
+
+### Bug Fixes
+
+* label ([#76](https://github.com/cedricziel/ha-addons/issues/76)) ([5d9e87b](https://github.com/cedricziel/ha-addons/commit/5d9e87bc16df2b8d3078690a1eb94e2e314b9549))
+
 ## [0.10.12](https://github.com/cedricziel/ha-addons/compare/otelcol-0.10.11...otelcol-0.10.12) (2024-07-21)
 
 
