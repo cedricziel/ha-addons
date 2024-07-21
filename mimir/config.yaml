@@ -1,7 +1,5 @@
----
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Grafana Mimir
-version: 1.0.10
+version: 1.0.11
 slug: mimir
 description: A scalable storage for prometheus
 url: https://github.com/cedricziel/ha-addons
