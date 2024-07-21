@@ -49,4 +49,4 @@ options:
           exporters: [logging]
 schema:
   config: str
-image: ghcr.io/cedricziel/ha-addon-otelcol/{arch}
+image: ghcr.io/cedricziel/ha-addon-otelcol-{arch}
