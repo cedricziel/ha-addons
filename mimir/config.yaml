@@ -21,4 +21,4 @@ options:
   scrape_ha: false
 schema:
   scrape_ha: bool?
-image: ghcr.io/cedricziel/ha-addon-grafana-mimir/{arch}
+image: ghcr.io/cedricziel/ha-addon-grafana-mimir-{arch}
