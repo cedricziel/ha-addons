@@ -19,6 +19,8 @@ jobs:
       - name: 📂 Detect changed addons
         uses: dorny/paths-filter@v3
         id: filter
+        with:
+          filter: .github/path-filters.yaml
 
       - name: 📂 Detect chanced files
         uses: dorny/paths-filter@v3
