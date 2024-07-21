@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [0.11.0](https://github.com/cedricziel/ha-addons/compare/otelcol-0.10.13...otelcol-0.11.0) (2024-07-21)
+
+
+### Features
+
+* startup otelcol as service ([#81](https://github.com/cedricziel/ha-addons/issues/81)) ([2294541](https://github.com/cedricziel/ha-addons/commit/22945415fcda98f64b25725f474460ad13e85a1e))
+
 ## [0.10.13](https://github.com/cedricziel/ha-addons/compare/otelcol-0.10.12...otelcol-0.10.13) (2024-07-21)
 
 
