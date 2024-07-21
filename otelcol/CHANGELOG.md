@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [0.12.0](https://github.com/cedricziel/ha-addons/compare/otelcol-0.11.0...otelcol-0.12.0) (2024-07-21)
+
+
+### Features
+
+* build otelcol for armv7 and i386 ([#89](https://github.com/cedricziel/ha-addons/issues/89)) ([3f48e49](https://github.com/cedricziel/ha-addons/commit/3f48e49ec8d608fa5de76144d4309287a339f9d4))
+
 ## [0.11.0](https://github.com/cedricziel/ha-addons/compare/otelcol-0.10.13...otelcol-0.11.0) (2024-07-21)
 
 
