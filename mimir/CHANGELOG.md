@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.0.13](https://github.com/cedricziel/ha-addons/compare/mimir-1.0.12...mimir-1.0.13) (2024-07-21)
+
+
+### Bug Fixes
+
+* bump ([#47](https://github.com/cedricziel/ha-addons/issues/47)) ([0319e87](https://github.com/cedricziel/ha-addons/commit/0319e87b7af4de347276ef9c7cc6dd44d43572d0))
+
 ## [1.0.12](https://github.com/cedricziel/ha-addons/compare/mimir-1.0.11...mimir-1.0.12) (2024-07-21)
 
 
