@@ -106,6 +106,6 @@ jobs:
             --test \
             --${{ matrix.arch }} \
             --target /data/${{ matrix.addon }} \
-            --image "${{ steps.check.outputs.image }}/${{ matrix.arch }}" \
+            --image "${{ steps.check.outputs.image }}-${{ matrix.arch }}" \
             --docker-hub "ghcr.io/${{ github.repository_owner }}" \
             --addon

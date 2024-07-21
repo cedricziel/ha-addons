@@ -31,4 +31,4 @@ options:
   prometheus_url: http://24212397-mimir:8001/api/v1/push
 schema:
   prometheus_url: str
-image: ghcr.io/cedricziel/ha-addon-grafana-tempo/{arch}
+image: ghcr.io/cedricziel/ha-addon-grafana-tempo-{arch}
