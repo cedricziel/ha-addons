@@ -9,6 +9,9 @@ permissions:
 
 name: release-please
 
+env:
+  BUILD_ARGS: ""
+
 jobs:
   release-please:
     runs-on: ubuntu-latest
