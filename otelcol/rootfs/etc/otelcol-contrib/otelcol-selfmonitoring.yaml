@@ -1,0 +1,22 @@
+---
+receivers:
+  prometheus/internal:
+    config:
+      scrape_configs:
+        - job_name: "otel-collector"
+          scrape_interval: 5s
+          static_configs:
+            - targets: ["localhost:8888"]
+processors:
+  batch/internal:
+exporters:
+  logging/internal:
+extensions:
+  health_check:
+service:
+  extensions: [health_check]
+  pipelines:
+    metrics/internal:
+      receivers: [prometheus/internal]
+      processors: [batch/internal]
+      exporters: [logging/internal]

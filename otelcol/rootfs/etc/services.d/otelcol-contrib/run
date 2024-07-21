@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start the OpenTelemetry collector
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+
+# Declare variables
+declare config
+declare -a options
+
+## Get the 'config' key from the user config options.
+config=$(bashio::config 'config')
+
+echo "$config" > /tmp/otelcol-config.yaml
+
+options+=(--config="/etc/otelcol-contrib/otelcol-selfmonitoring.yaml")
+options+=(--config="/tmp/otelcol-config.yaml")
+
+bashio::log.info 'Starting the OpenTelemetry Collector...'
+
+## Run your program
+exec /usr/bin/otelcol-contrib "${options[@]}"
