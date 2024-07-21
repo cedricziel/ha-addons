@@ -13,6 +13,8 @@ ports_description:
 arch:
   - aarch64
   - amd64
+  - i386
+  - armv7
 init: false
 map:
   - homeassistant_config:rw
