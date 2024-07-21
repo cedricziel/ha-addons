@@ -17,4 +17,4 @@ init: false
 map:
   - share:rw
 homeassistant_api: true
-image: ghcr.io/cedricziel/ha-addon-grafana-loki/{arch}
+image: ghcr.io/cedricziel/ha-addon-grafana-loki-{arch}
