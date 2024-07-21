@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.2.0](https://github.com/cedricziel/ha-addons/compare/loki-1.1.0...loki-1.2.0) (2024-07-21)
+
+
+### Features
+
+* build loki for arm ([#91](https://github.com/cedricziel/ha-addons/issues/91)) ([fd32faf](https://github.com/cedricziel/ha-addons/commit/fd32fafa05cb39907b30248de9d0a01e037dcbb5))
+
 ## [1.1.0](https://github.com/cedricziel/ha-addons/compare/loki-1.0.9...loki-1.1.0) (2024-07-21)
 
 
