@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start the example service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+
+declare scrape_ha
+scrape_ha=$(bashio::config 'scrape_ha')
+
+if $scrape_ha; then
+    exec /bin/telegraf
+else
+    bashio::log.info "Not scraping HomeAssistant metrics into Mimir. Enable 'scrape_ha' option to enable scraping."
+    exec tail -f /dev/null
+fi
