@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.1.0](https://github.com/cedricziel/ha-addons/compare/loki-1.0.9...loki-1.1.0) (2024-07-21)
+
+
+### Features
+
+* startup loki as services ([#83](https://github.com/cedricziel/ha-addons/issues/83)) ([ca9ca4e](https://github.com/cedricziel/ha-addons/commit/ca9ca4e6f0010e8d5ae010a909e1ead5fb19f547))
+
 ## [1.0.9](https://github.com/cedricziel/ha-addons/compare/loki-1.0.8...loki-1.0.9) (2024-07-21)
 
 
