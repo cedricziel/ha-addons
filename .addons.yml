@@ -4,16 +4,16 @@ addons:
   otelcol:
     repository: cedricziel/ha-addon-otelcol
     target: otelcol
-    image: ghcr.io/cedricziel/{arch}-ha-addon-otelcol
+    image: ghcr.io/cedricziel/ha-addon-otelcol/{arch}
   loki:
     repository: cedricziel/ha-addon-grafana-loki
     target: loki
-    image: ghcr.io/cedricziel/{arch}-addon-grafana-loki
+    image: ghcr.io/cedricziel/ha-addon-grafana-loki/{arch}
   mimir:
     repository: cedricziel/ha-addon-grafana-mimir
     target: mimir
-    image: ghcr.io/cedricziel/mimir/{arch}
+    image: ghcr.io/cedricziel/ha-addon-grafana-mimir/{arch}
   tempo:
     repository: cedricziel/ha-addon-grafana-tempo
     target: tempo
-    image: ghcr.io/cedricziel/{arch}-addon-grafana-tempo
+    image: ghcr.io/cedricziel/ha-addon-grafana-tempo/{arch}
