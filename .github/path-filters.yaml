@@ -1,3 +1,4 @@
+---
 loki: loki/*
 tempo: tempo/*
 mimir: mimir/*
