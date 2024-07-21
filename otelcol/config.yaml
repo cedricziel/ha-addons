@@ -1,5 +1,5 @@
 name: OpenTelemetry Collector
-version: 0.10.9
+version: 0.10.10
 slug: otelcol
 description: Bring the OpenTelemetry collector into your home
 url: https://github.com/cedricziel/ha-addon-otelcol
