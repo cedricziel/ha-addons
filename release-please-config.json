@@ -2,9 +2,17 @@
     "include-v-in-tag": false,
     "separate-pull-requests": true,
     "packages": {
-        "loki": {},
-        "mimir": {},
-        "otelcol": {},
-        "tempo": {}
+        "loki": {
+            "release-type": "simple"
+        },
+        "mimir": {
+            "release-type": "simple"
+        },
+        "otelcol": {
+            "release-type": "simple"
+        },
+        "tempo": {
+            "release-type": "simple"
+        }
     }
 }
