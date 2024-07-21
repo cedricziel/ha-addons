@@ -14,6 +14,7 @@ ports_description:
 arch:
   - aarch64
   - amd64
+  - armv7
 init: false
 map:
   - share:rw
