@@ -1,8 +1,15 @@
-# Changelog
+<!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
-## [0.10.8](https://github.com/cedricziel/ha-addons/compare/otelcol-v0.10.7...otelcol-0.10.8) (2024-07-21)
+## 1.2.0
 
+- Add an apparmor profile
+- Update to 3.15 base image with s6 v3
+- Add a sample script to run as service and constrain in aa profile
 
-### Bug Fixes
+## 1.1.0
 
-* remove old folders ([4e654e6](https://github.com/cedricziel/ha-addons/commit/4e654e60c422c544a64d488fbf0a537ba780dfd1))
+- Updates
+
+## 1.0.0
+
+- Initial release
