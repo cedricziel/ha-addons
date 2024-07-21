@@ -2,4 +2,4 @@
 configuration:
   config:
     name: config.yaml
-    description: Collector configuration
+    description: OpenTelemetry Collector configuration
