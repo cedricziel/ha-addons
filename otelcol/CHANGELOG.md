@@ -6,9 +6,3 @@
 ### Bug Fixes
 
 * remove old folders ([4e654e6](https://github.com/cedricziel/ha-addons/commit/4e654e60c422c544a64d488fbf0a537ba780dfd1))
-
-## What’s changed
-
-## 🚀 Enhancements
-
-- chore: migrate to homeassistant_config @cedricziel (#72)
