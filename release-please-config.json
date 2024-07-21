@@ -1,0 +1,10 @@
+{
+    "include-v-in-tag": false,
+    "separate-pull-requests": true,
+    "packages": {
+        "loki": {},
+        "mimir": {},
+        "otelcol": {},
+        "tempo": {}
+    }
+}
