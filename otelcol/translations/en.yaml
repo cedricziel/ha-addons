@@ -2,4 +2,4 @@
 configuration:
   config:
     name: config.yaml
-    description: Collector config
+    description: Collector configuration
