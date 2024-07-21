@@ -1,7 +1,7 @@
 ---
 channel: stable
 addons:
-  otelcol:
+  ha-addon-otelcol:
     repository: cedricziel/ha-addon-otelcol
     target: otelcol
     image: ghcr.io/cedricziel/ha-addon-otelcol/{arch}
