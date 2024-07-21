@@ -1,3 +1,4 @@
+# yamllint disable rule:line-length
 ---
 build_from:
   aarch64: "ghcr.io/home-assistant/aarch64-base:3.15"
