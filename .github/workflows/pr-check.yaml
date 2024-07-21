@@ -82,7 +82,7 @@ jobs:
         env:
           HEAD: "${{ github.head_ref }}"
         run: |
-          # shellcheck disable=SC2157,SC2086 
+          # shellcheck disable=SC2157,SC2086
           if [[ "${{ steps.info.outputs.architectures }}" =~ ${{ matrix.arch }} ]]; then
              # shellcheck disable=SC2129
              echo "build_arch=true" >> $GITHUB_OUTPUT;
