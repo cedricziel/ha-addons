@@ -1,8 +1,8 @@
 on:
-    push:
-      branches:
-        - main
-  
+  push:
+    branches:
+      - main
+
 permissions:
   contents: write
   pull-requests: write
@@ -18,8 +18,8 @@ jobs:
         with:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
     outputs:
-        releases_created: ${{ steps.release.outputs.releases_created }}
-        paths_released: ${{ steps.release.outputs.paths_released }}
+      releases_created: ${{ steps.release.outputs.releases_created }}
+      paths_released: ${{ steps.release.outputs.paths_released }}
 
   build:
     if: ${{ needs.release-please.outputs.releases_created }}
@@ -30,7 +30,7 @@ jobs:
     strategy:
       matrix:
         addon: ${{ fromJSON(needs.release-please.outputs.paths_released) }}
-        arch: ["aarch64", "amd64", "armv7"]
+        arch: [ "aarch64", "amd64", "armv7" ]
 
     steps:
       - name: Check out repository
