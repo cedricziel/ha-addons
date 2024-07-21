@@ -2,6 +2,13 @@
 
 - rectify receiver config
 
+## [1.0.12](https://github.com/cedricziel/ha-addons/compare/tempo-1.0.11...tempo-1.0.12) (2024-07-21)
+
+
+### Bug Fixes
+
+* bump ([#53](https://github.com/cedricziel/ha-addons/issues/53)) ([0ecc2f8](https://github.com/cedricziel/ha-addons/commit/0ecc2f8f99f8f01e1c6621516a17a86ed52da499))
+
 ## [1.0.11](https://github.com/cedricziel/ha-addons/compare/tempo-1.0.10...tempo-1.0.11) (2024-07-21)
 
 
