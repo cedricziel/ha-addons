@@ -1,5 +1,9 @@
 # Home Assistant Add-on: Grafana Loki
 
+This addon brings [Grafana Loki](https://grafana.com/loki) to your HomeAssistant.
+
+It allows you to store logs and query them using a similar interface as Prometheus.
+
 ## How to use
 
 This add-on will start Grafana Loki with local storage.
