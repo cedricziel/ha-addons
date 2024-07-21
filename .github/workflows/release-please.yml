@@ -14,5 +14,75 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
+        id: release
         with:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
+    outputs:
+        releases_created: ${{ steps.release.outputs.releases_created }}
+        paths_released: ${{ steps.release.outputs.paths_released }}
+
+  build:
+    if: ${{ needs.release-please.outputs.releases_created }}
+    needs:
+      - release-please
+    runs-on: ubuntu-latest
+    name: Build ${{ matrix.arch }} ${{ matrix.addon }} add-on
+    strategy:
+      matrix:
+        addon: ${{ fromJSON(needs.release-please.outputs.paths_released) }}
+        arch: ["aarch64", "amd64", "armv7"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Get information
+        id: info
+        uses: home-assistant/actions/helpers/info@master
+        with:
+          path: "./${{ matrix.addon }}"
+
+      - name: Check if add-on should be built
+        id: check
+        env:
+          HEAD: "${{ github.head_ref }}"
+        run: |
+          # shellcheck disable=SC2157,SC2086 
+          if [[ "${{ steps.info.outputs.architectures }}" =~ ${{ matrix.arch }} ]]; then
+             # shellcheck disable=SC2129
+             echo "build_arch=true" >> $GITHUB_OUTPUT;
+             # shellcheck disable=SC2129
+             echo "image=$(echo ${{ steps.info.outputs.image }} | cut -d'/' -f3)" >> $GITHUB_OUTPUT;
+             if [[ -z "$HEAD" ]] && [[ "${{ github.event_name }}" == "push" ]]; then
+                 # shellcheck disable=SC2129
+                 echo "BUILD_ARGS=" >> $GITHUB_ENV;
+             fi
+           else
+             echo "${{ matrix.arch }} is not a valid arch for ${{ matrix.addon }}, skipping build";
+             # shellcheck disable=SC2129
+             echo "build_arch=false" >> $GITHUB_OUTPUT;
+          fi
+
+      - name: Use action to check for mixed line endings (CRLF and LF)
+        uses: ymwymw/check-mixed-line-endings@v2
+
+      - name: Login to GitHub Container Registry
+        if: env.BUILD_ARGS != '--test'
+        uses: docker/login-action@v3.1.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build ${{ matrix.addon }} add-on
+        id: builderstep
+        if: steps.check.outputs.build_arch == 'true'
+        uses: home-assistant/builder@master
+        with:
+          args: |
+            ${{ env.BUILD_ARGS }} \
+            --${{ matrix.arch }} \
+            --target /data/${{ matrix.addon }} \
+            --image "${{ steps.check.outputs.image }}" \
+            --docker-hub "ghcr.io/${{ github.repository_owner }}" \
+            --addon
