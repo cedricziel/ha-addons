@@ -1,6 +1,6 @@
 # Home Assistant Add-on: Grafana Mimir
 
-Use Grafana Mimir with HomeAssistant
+Use Grafana Mimir with HomeAssistant.
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
