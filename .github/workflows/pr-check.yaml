@@ -91,6 +91,7 @@ jobs:
           fi
 
       - name: Build ${{ matrix.addon }} add-on
+        if: steps.check.outputs.build_arch == 'true'
         uses: home-assistant/builder@master
         with:
           args: |
