@@ -1,0 +1,33 @@
+name: Grafana Tempo
+version: 1.0.7
+slug: tempo
+description: Grafana Tempo is an open source, easy-to-use, and high-scale distributed
+  tracing backend.
+url: https://github.com/cedricziel/ha-addon-grafana-tempo/blob/main/tempo
+apparmor: false
+ports:
+  3200/tcp: null
+  4317/tcp: null
+  4318/tcp: null
+  9411/tcp: null
+  9095/tcp: null
+  14268/tcp: null
+ports_description:
+  3200/tcp: Tempo
+  4317/tcp: OTLP/gRPC
+  4318/tcp: OTLP/HTTP
+  9411/tcp: Zipkin
+  9095/tcp: gRPC
+  14268/tcp: Jaeger/Thrift HTTP
+arch:
+- aarch64
+- amd64
+init: false
+map:
+- share:rw
+homeassistant_api: true
+options:
+  prometheus_url: http://24212397-mimir:8001/api/v1/push
+schema:
+  prometheus_url: str
+image: ghcr.io/cedricziel/ha-addon-grafana-tempo/{arch}
