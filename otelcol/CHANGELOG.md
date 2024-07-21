@@ -1,5 +1,13 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [0.10.9](https://github.com/cedricziel/ha-addons/compare/otelcol-0.10.8...otelcol-0.10.9) (2024-07-21)
+
+
+### Bug Fixes
+
+* add otelcol files ([#33](https://github.com/cedricziel/ha-addons/issues/33)) ([fe5e1b3](https://github.com/cedricziel/ha-addons/commit/fe5e1b325651ec2347132b34827ba0e188f75f9a))
+* fix changelog ([#18](https://github.com/cedricziel/ha-addons/issues/18)) ([538933e](https://github.com/cedricziel/ha-addons/commit/538933eba58e9bffa553d851da6d993b35db9fcf))
+
 ## 1.2.0
 
 - Add an apparmor profile
