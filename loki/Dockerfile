@@ -2,11 +2,11 @@ ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:3.15
 
 # Loki
 # hadolint ignore=DL3029
-FROM --platform=linux/amd64 grafana/loki:2.9.9 as loki-amd64
+FROM --platform=linux/amd64 grafana/loki:3.1.2 as loki-amd64
 # hadolint ignore=DL3029
-FROM --platform=linux/arm64 grafana/loki:2.9.9 as loki-arm64
+FROM --platform=linux/arm64 grafana/loki:3.1.2 as loki-arm64
 # hadolint ignore=DL3029
-FROM --platform=linux/arm grafana/loki:2.9.9 as loki-armv7
+FROM --platform=linux/arm grafana/loki:3.1.2 as loki-armv7
 
 FROM ghcr.io/tarampampam/curl:8.10.1 as curl
 
