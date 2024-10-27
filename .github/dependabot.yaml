@@ -13,27 +13,37 @@ updates:
       interval: "daily"
     assignees:
       - cedricziel
+    commit-message:
+      prefix: "fix: "
   - package-ecosystem: "docker"
     directory: "/loki"
     schedule:
       interval: "daily"
     assignees:
       - cedricziel
+    commit-message:
+      prefix: "fix: "
   - package-ecosystem: "docker"
     directory: "/mimir"
     schedule:
       interval: "daily"
     assignees:
       - cedricziel
+    commit-message:
+      prefix: "fix: "
   - package-ecosystem: "docker"
     directory: "/otelcol"
     schedule:
       interval: "daily"
     assignees:
       - cedricziel
+    commit-message:
+      prefix: "fix: "
   - package-ecosystem: "docker"
     directory: "/tempo"
     schedule:
       interval: "daily"
     assignees:
       - cedricziel
+    commit-message:
+      prefix: "fix: "
