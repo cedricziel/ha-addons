@@ -3,9 +3,9 @@ ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:6.0.0
 
 # Mimir
 # hadolint ignore=DL3029
-FROM --platform=linux/amd64 grafana/mimir:2.13.0 as mimir-amd64
+FROM --platform=linux/amd64 grafana/mimir:2.14.0 as mimir-amd64
 # hadolint ignore=DL3029
-FROM --platform=linux/arm64 grafana/mimir:2.13.0 as mimir-arm64
+FROM --platform=linux/arm64 grafana/mimir:2.14.0 as mimir-arm64
 
 # Agent
 # hadolint ignore=DL3029
