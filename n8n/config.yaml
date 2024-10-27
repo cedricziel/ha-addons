@@ -1,0 +1,15 @@
+name: n8n
+version: 0.0.1
+slug: n8n
+description: Workflow Automation Platform
+url: https://github.com/cedricziel/ha-addons
+startup: services
+apparmor: false
+arch:
+  - aarch64
+  - amd64
+init: false
+map:
+  - share:rw
+homeassistant_api: true
+image: ghcr.io/cedricziel/ha-addon-n8n-{arch}
