@@ -1,12 +1,12 @@
 ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:6.1.3
 
-FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.112.0-amd64 as otelcol-amd64
+FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.113.0-amd64 as otelcol-amd64
 
-FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.112.0-arm64 as otelcol-arm64
+FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.113.0-arm64 as otelcol-arm64
 
-FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.112.0 as otelcol-i386
+FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.113.0 as otelcol-i386
 
-FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.112.0-armv7 as otelcol-armv7
+FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.113.0-armv7 as otelcol-armv7
 
 FROM ghcr.io/tarampampam/curl:8.10.1 as curl
 
