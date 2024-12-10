@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.2.1](https://github.com/cedricziel/ha-addons/compare/loki-1.2.0...loki-1.2.1) (2024-12-10)
+
+
+### Bug Fixes
+
+* bump tarampampam/curl from 8.10.1 to 8.11.0 in /loki ([#118](https://github.com/cedricziel/ha-addons/issues/118)) ([caf9e13](https://github.com/cedricziel/ha-addons/commit/caf9e13f86de1a4a5c4ab61b3110bb3c2e23e978))
+
 ## [1.2.0](https://github.com/cedricziel/ha-addons/compare/loki-1.1.0...loki-1.2.0) (2024-07-21)
 
 
