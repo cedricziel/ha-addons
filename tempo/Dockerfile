@@ -7,7 +7,7 @@ FROM --platform=linux/amd64 grafana/tempo:2.6.1 as tempo-amd64
 # hadolint ignore=DL3029
 FROM --platform=linux/arm64 grafana/tempo:2.6.1 as tempo-arm64
 
-FROM ghcr.io/tarampampam/curl:8.10.1 as curl
+FROM ghcr.io/tarampampam/curl:8.11.0 as curl
 
 FROM scratch as container
 
