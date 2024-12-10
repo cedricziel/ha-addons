@@ -1,5 +1,5 @@
 name: Grafana Loki
-version: 1.2.0
+version: 1.2.1
 slug: loki
 description: 'Loki: like Prometheus, but for logs.'
 url: https://github.com/cedricziel/ha-addons
