@@ -8,7 +8,7 @@ FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-colle
 
 FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.121.0-armv7 as otelcol-armv7
 
-FROM ghcr.io/tarampampam/curl:8.11.0 as curl
+FROM ghcr.io/tarampampam/curl:8.12.1 as curl
 
 FROM scratch as container
 
