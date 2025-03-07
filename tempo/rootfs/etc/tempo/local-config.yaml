@@ -1,6 +1,5 @@
 ---
 target: all
-metrics_generator_enabled: true
 search_enabled: true
 
 server:
