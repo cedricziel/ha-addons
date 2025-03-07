@@ -1,15 +1,3 @@
-## 1.5.0-rc6
-
-- rectify receiver config
-
-## [1.1.2](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.1...tempo-1.1.2) (2025-03-07)
-
-
-### Bug Fixes
-
-* bump grafana/tempo from 2.6.1 to 2.7.1 in /tempo ([#149](https://github.com/cedricziel/ha-addons/issues/149)) ([87213fc](https://github.com/cedricziel/ha-addons/commit/87213fceaaaa20f21a9e8672e3d094c47ce3747d))
-* remove metrics_generator_enabled flag ([#155](https://github.com/cedricziel/ha-addons/issues/155)) ([884471e](https://github.com/cedricziel/ha-addons/commit/884471ecd370ef80ede989f2d2c910553452c418))
-
 ## [1.1.1](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.0...tempo-1.1.1) (2025-03-07)
 
 
