@@ -86,9 +86,6 @@ storage:
     backend: local
     block:
       bloom_filter_false_positive: .05
-      index_downsample_bytes: 1000
-      encoding: zstd
-      version: vParquet
     wal:
       path: /data/tempo/wal
       encoding: snappy
@@ -100,4 +97,4 @@ storage:
 
 overrides:
   max_search_bytes_per_trace: 50_000
-  metrics_generator_processors: [service-graphs, span-metrics]
+  metrics_generator_processors: [service-graphs, span-metrics, local-blocks]
