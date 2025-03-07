@@ -30,7 +30,7 @@ options:
     processors:
       batch:
     exporters:
-      logging:
+      debug:
     # health-check is activated by default
     extensions:
       pprof:
@@ -41,15 +41,15 @@ options:
         traces:
           receivers: [otlp]
           processors: [batch]
-          exporters: [logging]
+          exporters: [debug]
         metrics:
           receivers: [otlp]
           processors: [batch]
-          exporters: [logging]
+          exporters: [debug]
         logs:
           receivers: [otlp]
           processors: [batch]
-          exporters: [logging]
+          exporters: [debug]
 schema:
   config: str
 image: ghcr.io/cedricziel/ha-addon-otelcol-{arch}
