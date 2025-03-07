@@ -46,6 +46,5 @@ storage_config:
     directory: /data/loki/chunks
 
 limits_config:
-  enforce_metric_name: false
   reject_old_samples: false
   max_query_length: 0h
