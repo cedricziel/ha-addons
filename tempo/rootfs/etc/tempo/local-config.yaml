@@ -1,7 +1,5 @@
 ---
 target: all
-metrics_generator_enabled: true
-search_enabled: true
 
 server:
   http_listen_port: 3200
@@ -45,11 +43,38 @@ ingester:
   complete_block_timeout: 1s
   flush_check_period: 1s
 
+# Configures the metrics generator component of Tempo.
 metrics_generator:
+  # Specifies which processors to use.
+  processor:
+    # yamllint disable-line rule:line-length
+    # Span metrics create metrics based on span type, duration, name and service.
+    span_metrics:
+      # Configure extra dimensions to add as metric labels.
+      dimensions:
+        - http.method
+        - http.target
+        - http.status_code
+        - service.version
+    # yamllint disable-line rule:line-length
+    # Service graph metrics create node and edge metrics for determinng service interactions.
+    service_graphs:
+      # Configure extra dimensions to add as metric labels.
+      dimensions:
+        - http.method
+        - http.target
+        - http.status_code
+        - service.version
+    # Configure the local blocks processor.
+    local_blocks:
+      # yamllint disable-line rule:line-length
+      # Ensure that metrics blocks are flushed to storage so TraceQL metrics queries against historical data.
+      flush_to_storage: true
   registry:
     external_labels:
       source: tempo
       cluster: home-assistant
+
   storage:
     path: /data/tempo/generator/wal
     remote_write:
@@ -61,12 +86,8 @@ storage:
     backend: local
     block:
       bloom_filter_false_positive: .05
-      index_downsample_bytes: 1000
-      encoding: zstd
-      version: vParquet
     wal:
       path: /data/tempo/wal
-      encoding: snappy
     local:
       path: /data/tempo/blocks
     pool:
@@ -74,5 +95,4 @@ storage:
       queue_depth: 10000
 
 overrides:
-  max_search_bytes_per_trace: 50_000
-  metrics_generator_processors: [service-graphs, span-metrics]
+  metrics_generator_processors: [service-graphs, span-metrics, local-blocks]
