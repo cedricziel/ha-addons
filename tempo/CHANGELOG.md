@@ -5,6 +5,13 @@
 
 * bump tarampampam/curl from 8.10.1 to 8.11.0 in /tempo ([#117](https://github.com/cedricziel/ha-addons/issues/117)) ([b4b88c2](https://github.com/cedricziel/ha-addons/commit/b4b88c25ceb716263c58311083c25b7ab762fbf7))
 
+## [1.1.4](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.3...tempo-1.1.4) (2025-03-07)
+
+
+### Bug Fixes
+
+* remove search_enabled ([#160](https://github.com/cedricziel/ha-addons/issues/160)) ([f3a4550](https://github.com/cedricziel/ha-addons/commit/f3a4550c49914635310d4e16d784ee3f083cb722))
+
 ## [1.1.3](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.2...tempo-1.1.3) (2025-03-07)
 
 
