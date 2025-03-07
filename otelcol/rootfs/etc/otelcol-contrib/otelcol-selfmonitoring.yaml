@@ -10,7 +10,7 @@ receivers:
 processors:
   batch/internal:
 exporters:
-  logging/internal:
+  debug/internal:
 extensions:
   health_check:
 service:
@@ -19,4 +19,4 @@ service:
     metrics/internal:
       receivers: [prometheus/internal]
       processors: [batch/internal]
-      exporters: [logging/internal]
+      exporters: [debug/internal]
