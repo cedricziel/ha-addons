@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.2.3](https://github.com/cedricziel/ha-addons/compare/loki-1.2.2...loki-1.2.3) (2025-03-07)
+
+
+### Bug Fixes
+
+* migrate loki config ([#169](https://github.com/cedricziel/ha-addons/issues/169)) ([d0e33f7](https://github.com/cedricziel/ha-addons/commit/d0e33f70c2900fbf559f03bcccf08ccc7db72bf6))
+
 ## [1.2.2](https://github.com/cedricziel/ha-addons/compare/loki-1.2.1...loki-1.2.2) (2025-03-07)
 
 
