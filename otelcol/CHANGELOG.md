@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [0.12.4](https://github.com/cedricziel/ha-addons/compare/otelcol-0.12.3...otelcol-0.12.4) (2025-03-07)
+
+
+### Bug Fixes
+
+* migrate otelcol config from logging to debug ([#167](https://github.com/cedricziel/ha-addons/issues/167)) ([490c5f2](https://github.com/cedricziel/ha-addons/commit/490c5f25adde039b1ccc2098c17fc5c9fcdeb366))
+
 ## [0.12.3](https://github.com/cedricziel/ha-addons/compare/otelcol-0.12.2...otelcol-0.12.3) (2025-03-07)
 
 
