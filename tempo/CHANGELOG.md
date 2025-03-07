@@ -5,6 +5,13 @@
 
 * bump tarampampam/curl from 8.10.1 to 8.11.0 in /tempo ([#117](https://github.com/cedricziel/ha-addons/issues/117)) ([b4b88c2](https://github.com/cedricziel/ha-addons/commit/b4b88c25ceb716263c58311083c25b7ab762fbf7))
 
+## [1.1.6](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.5...tempo-1.1.6) (2025-03-07)
+
+
+### Bug Fixes
+
+* migrate tempo config ([#164](https://github.com/cedricziel/ha-addons/issues/164)) ([ee93cb5](https://github.com/cedricziel/ha-addons/commit/ee93cb52ecfe7598f03685fcad1745aa2106db2a))
+
 ## [1.1.5](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.4...tempo-1.1.5) (2025-03-07)
 
 
