@@ -1,5 +1,17 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [0.12.3](https://github.com/cedricziel/ha-addons/compare/otelcol-0.12.2...otelcol-0.12.3) (2025-03-07)
+
+
+### Bug Fixes
+
+* bump open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib ([#121](https://github.com/cedricziel/ha-addons/issues/121)) ([fdff818](https://github.com/cedricziel/ha-addons/commit/fdff818618ec2e04b02e5d908f0f4d7318099754))
+* bump open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib ([#131](https://github.com/cedricziel/ha-addons/issues/131)) ([b35ed8d](https://github.com/cedricziel/ha-addons/commit/b35ed8d0e5c357eb311c7371f89d92d2b7a23d47))
+* bump open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib ([#153](https://github.com/cedricziel/ha-addons/issues/153)) ([86ff40f](https://github.com/cedricziel/ha-addons/commit/86ff40f053148ff57a6b270bb7421dced2d6f3d7))
+* bump tarampampam/curl from 8.10.1 to 8.11.0 in /otelcol ([#119](https://github.com/cedricziel/ha-addons/issues/119)) ([921ca71](https://github.com/cedricziel/ha-addons/commit/921ca71f8f35b4cef073d3ff1abbde0ffc17d177))
+* bump tarampampam/curl from 8.11.0 to 8.12.1 in /otelcol ([#146](https://github.com/cedricziel/ha-addons/issues/146)) ([59e5780](https://github.com/cedricziel/ha-addons/commit/59e5780679c3a4c833f2aaf577fa2de7c0abfdfa))
+* migrate otelcol config from logging to debug ([#166](https://github.com/cedricziel/ha-addons/issues/166)) ([1ff5170](https://github.com/cedricziel/ha-addons/commit/1ff51704008805a826bbd611a37a7492be3d60cb))
+
 ## [0.12.2](https://github.com/cedricziel/ha-addons/compare/otelcol-0.12.1...otelcol-0.12.2) (2024-11-20)
 
 
