@@ -48,26 +48,29 @@ ingester:
 metrics_generator:
   # Specifies which processors to use.
   processor:
+    # yamllint disable-line rule:line-length
     # Span metrics create metrics based on span type, duration, name and service.
     span_metrics:
-        # Configure extra dimensions to add as metric labels.
-        dimensions:
-          - http.method
-          - http.target
-          - http.status_code
-          - service.version
+      # Configure extra dimensions to add as metric labels.
+      dimensions:
+        - http.method
+        - http.target
+        - http.status_code
+        - service.version
+    # yamllint disable-line rule:line-length
     # Service graph metrics create node and edge metrics for determinng service interactions.
     service_graphs:
-        # Configure extra dimensions to add as metric labels.
-        dimensions:
-          - http.method
-          - http.target
-          - http.status_code
-          - service.version
+      # Configure extra dimensions to add as metric labels.
+      dimensions:
+        - http.method
+        - http.target
+        - http.status_code
+        - service.version
     # Configure the local blocks processor.
     local_blocks:
-        # Ensure that metrics blocks are flushed to storage so TraceQL metrics queries against historical data.
-        flush_to_storage: true
+      # yamllint disable-line rule:line-length
+      # Ensure that metrics blocks are flushed to storage so TraceQL metrics queries against historical data.
+      flush_to_storage: true
   registry:
     external_labels:
       source: tempo
