@@ -88,7 +88,6 @@ storage:
       bloom_filter_false_positive: .05
     wal:
       path: /data/tempo/wal
-      encoding: snappy
     local:
       path: /data/tempo/blocks
     pool:
@@ -96,5 +95,4 @@ storage:
       queue_depth: 10000
 
 overrides:
-  max_search_bytes_per_trace: 50_000
   metrics_generator_processors: [service-graphs, span-metrics, local-blocks]
