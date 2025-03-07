@@ -2,6 +2,13 @@
 
 - rectify receiver config
 
+## [1.1.1](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.0...tempo-1.1.1) (2025-03-07)
+
+
+### Bug Fixes
+
+* bump tarampampam/curl from 8.10.1 to 8.11.0 in /tempo ([#117](https://github.com/cedricziel/ha-addons/issues/117)) ([b4b88c2](https://github.com/cedricziel/ha-addons/commit/b4b88c25ceb716263c58311083c25b7ab762fbf7))
+
 ## [1.1.0](https://github.com/cedricziel/ha-addons/compare/tempo-1.0.16...tempo-1.1.0) (2024-07-21)
 
 
