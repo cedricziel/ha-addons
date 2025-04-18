@@ -1,5 +1,13 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.2.4](https://github.com/cedricziel/ha-addons/compare/loki-1.2.3...loki-1.2.4) (2025-04-18)
+
+
+### Bug Fixes
+
+* bump grafana/loki from 3.4.2 to 3.4.3 in /loki ([#180](https://github.com/cedricziel/ha-addons/issues/180)) ([b05d97a](https://github.com/cedricziel/ha-addons/commit/b05d97acc8827e270fce588fae010d35d27b08d8))
+* bump tarampampam/curl from 8.12.1 to 8.13.0 in /loki ([#182](https://github.com/cedricziel/ha-addons/issues/182)) ([9c25df5](https://github.com/cedricziel/ha-addons/commit/9c25df52ed8e63f622466c3e74bb359d65b84106))
+
 ## [1.2.3](https://github.com/cedricziel/ha-addons/compare/loki-1.2.2...loki-1.2.3) (2025-03-07)
 
 
