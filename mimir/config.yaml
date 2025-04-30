@@ -12,6 +12,7 @@ ports_description:
   8001/tcp: Mimir
   9001/tcp: gRPC
 arch:
+  - arm64
   - aarch64
   - amd64
 init: false
