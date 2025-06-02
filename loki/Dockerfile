@@ -8,7 +8,7 @@ FROM --platform=linux/arm64 grafana/loki:3.4.3 as loki-arm64
 # hadolint ignore=DL3029
 FROM --platform=linux/arm grafana/loki:3.4.3 as loki-armv7
 
-FROM ghcr.io/tarampampam/curl:8.13.0 as curl
+FROM ghcr.io/tarampampam/curl:8.14.0 as curl
 
 FROM scratch as container
 
