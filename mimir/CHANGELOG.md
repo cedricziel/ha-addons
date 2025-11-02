@@ -1,5 +1,13 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.1.5](https://github.com/cedricziel/ha-addons/compare/mimir-1.1.4...mimir-1.1.5) (2025-11-02)
+
+
+### Bug Fixes
+
+* bump grafana/mimir from 2.15.2 to 2.17.2 in /mimir ([#255](https://github.com/cedricziel/ha-addons/issues/255)) ([3cfcd26](https://github.com/cedricziel/ha-addons/commit/3cfcd2651dce8982e236f7d583e910e111752810))
+* bump telegraf from 1.34.2 to 1.36.3 in /mimir ([#253](https://github.com/cedricziel/ha-addons/issues/253)) ([225e837](https://github.com/cedricziel/ha-addons/commit/225e837a5ed6332976acfefa1b7ba9f031a9d502))
+
 ## [1.1.4](https://github.com/cedricziel/ha-addons/compare/mimir-1.1.3...mimir-1.1.4) (2025-04-18)
 
 
