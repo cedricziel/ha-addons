@@ -1,5 +1,5 @@
 name: Grafana Mimir
-version: 1.1.4
+version: 1.1.5
 slug: mimir
 description: A scalable storage for prometheus
 url: https://github.com/cedricziel/ha-addons
