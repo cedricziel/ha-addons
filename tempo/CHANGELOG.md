@@ -5,6 +5,13 @@
 
 * bump tarampampam/curl from 8.10.1 to 8.11.0 in /tempo ([#117](https://github.com/cedricziel/ha-addons/issues/117)) ([b4b88c2](https://github.com/cedricziel/ha-addons/commit/b4b88c25ceb716263c58311083c25b7ab762fbf7))
 
+## [1.1.10](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.9...tempo-1.1.10) (2026-03-14)
+
+
+### Bug Fixes
+
+* bump grafana/tempo from 2.10.1 to 2.10.2 in /tempo ([#298](https://github.com/cedricziel/ha-addons/issues/298)) ([c1265f2](https://github.com/cedricziel/ha-addons/commit/c1265f2143d8a0f783278bef6846687fd14bc93c))
+
 ## [1.1.9](https://github.com/cedricziel/ha-addons/compare/tempo-1.1.8...tempo-1.1.9) (2026-03-06)
 
 
