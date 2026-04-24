@@ -3,9 +3,9 @@ ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:3.15
 
 # Tempo
 # hadolint ignore=DL3029
-FROM --platform=linux/amd64 grafana/tempo:2.10.4 as tempo-amd64
+FROM --platform=linux/amd64 grafana/tempo:2.10.5 as tempo-amd64
 # hadolint ignore=DL3029
-FROM --platform=linux/arm64 grafana/tempo:2.10.4 as tempo-arm64
+FROM --platform=linux/arm64 grafana/tempo:2.10.5 as tempo-arm64
 
 FROM ghcr.io/tarampampam/curl:8.16.0 as curl
 
