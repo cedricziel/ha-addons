@@ -12,6 +12,7 @@ ports_description:
   3100/tcp: Loki
   9096/tcp: gRPC
 arch:
+  - arm64
   - aarch64
   - amd64
   - armv7
