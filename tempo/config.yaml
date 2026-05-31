@@ -21,6 +21,7 @@ ports_description:
   9095/tcp: gRPC
   14268/tcp: Jaeger/Thrift HTTP
 arch:
+  - arm64
   - aarch64
   - amd64
 init: false
