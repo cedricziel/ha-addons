@@ -1,5 +1,12 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [1.1.14](https://github.com/cedricziel/ha-addons/compare/mimir-1.1.13...mimir-1.1.14) (2026-07-18)
+
+
+### Bug Fixes
+
+* bump grafana/mimir from 3.1.2 to 3.1.3 in /mimir ([#359](https://github.com/cedricziel/ha-addons/issues/359)) ([1f0f805](https://github.com/cedricziel/ha-addons/commit/1f0f80516307d0c44d9ee8d660e207fda81d6bf5))
+
 ## [1.1.13](https://github.com/cedricziel/ha-addons/compare/mimir-1.1.12...mimir-1.1.13) (2026-07-01)
 
 
