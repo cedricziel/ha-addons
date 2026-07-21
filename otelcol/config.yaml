@@ -11,6 +11,7 @@ ports_description:
   4317/tcp: OTLP/gRPC
   4318/tcp: OTLP/HTTP
 arch:
+  - arm64
   - aarch64
   - amd64
   - i386
