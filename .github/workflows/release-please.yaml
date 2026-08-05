@@ -38,6 +38,7 @@ jobs:
         addon: ${{ fromJSON(needs.release-please.outputs.paths_released) }}
         arch:
           - "aarch64"
+          - "arm64"
           - "amd64"
           - "armv7"
           - "i386"
