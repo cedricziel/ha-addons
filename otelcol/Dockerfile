@@ -4,7 +4,7 @@ FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-colle
 
 FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.158.0-arm64 as otelcol-arm64
 
-FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.157.0-386 as otelcol-i386
+FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.158.0 as otelcol-i386
 
 FROM ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.158.0-armv7 as otelcol-armv7
 
