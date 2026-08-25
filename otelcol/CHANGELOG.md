@@ -1,5 +1,13 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## [0.12.19](https://github.com/cedricziel/ha-addons/compare/otelcol-0.12.18...otelcol-0.12.19) (2026-08-25)
+
+
+### Bug Fixes
+
+* bump open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib ([#378](https://github.com/cedricziel/ha-addons/issues/378)) ([536f131](https://github.com/cedricziel/ha-addons/commit/536f1315be6167232170ccac17501ca17eb2520b))
+* bump open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib ([#381](https://github.com/cedricziel/ha-addons/issues/381)) ([f8b7a29](https://github.com/cedricziel/ha-addons/commit/f8b7a2974431407e170e2f7d30e845f2fe6ad4cd))
+
 ## [0.12.18](https://github.com/cedricziel/ha-addons/compare/otelcol-0.12.17...otelcol-0.12.18) (2026-08-11)
 
 
