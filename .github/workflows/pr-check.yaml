@@ -19,7 +19,7 @@ jobs:
       changedChangelogFiles: ${{ steps.changed-files.outputs.changelogs_files }}
     steps:
       - name: ↩️ Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 📂 Detect changed addons
         uses: dorny/paths-filter@v4
@@ -47,7 +47,7 @@ jobs:
         addon: ${{ fromJSON(needs.check-addon-changes.outputs.changedAddons) }}
     steps:
       - name: ↩️ Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔎 Run Home Assistant Add-on Lint
         uses: frenck/action-addon-linter@v2
@@ -70,7 +70,7 @@ jobs:
           - "i386"
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Get information
         id: info
